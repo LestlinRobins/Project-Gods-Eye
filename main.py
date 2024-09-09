@@ -1,7 +1,5 @@
 import subprocess
 from itertools import permutations
-import re
-import os
 
 def getListsOfUsernames(name):
     usernames=[]
