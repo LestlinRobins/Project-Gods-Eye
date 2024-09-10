@@ -1,5 +1,6 @@
 import subprocess
 from itertools import permutations
+from scrape_instagram import getProfileDetails
 
 def getListsOfUsernames(name):
     usernames=[]
@@ -74,6 +75,6 @@ print(f"<----Searching for all possible combinations of the given {name}---->")
 print("Collected Information:", user_info)
 for i in getListsOfUsernames(name):
     print(f"Searching for {i}")
-    # run_sherlock(i)
+    getProfileDetails(i)
 
 print(run_what("+91 9526969878"))
